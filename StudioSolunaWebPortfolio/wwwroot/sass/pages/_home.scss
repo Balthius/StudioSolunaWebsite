@@ -1,0 +1,23 @@
+.main-section {
+    color: $color-night-dark;
+    text-align: left;
+
+    a {
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        text-align: left;
+        font-size: 2rem;
+        list-style-type: none;
+    }
+}
+
+.welcome-section {
+    text-align: center;
+    color: $color-night-dark;
+}

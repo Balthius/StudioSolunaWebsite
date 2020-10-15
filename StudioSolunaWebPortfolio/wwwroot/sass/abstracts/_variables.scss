@@ -1,0 +1,35 @@
+$color-night-light: #B084CC;
+$color-night-dark: #321F70;
+
+$color-day-light: #E0B400;
+$color-day-dark: #DA3E52;
+
+$color-neutral-light: #5AD2F4;
+$color-neutral-dark: #1C5D99;
+
+//High Saturation
+$color-night-light-s: #D085FF;
+$color-night-dark-s: #21008F;
+
+$color-day-light-s: #E0B400;
+$color-day-dark-s: #FF1A38;
+
+$color-neutral-light-s: #4DD8FF;
+$color-neutral-dark-s: #030179;
+
+$color-grey-1: rgb(185, 218, 255);
+
+
+$color-black-1: rgb(30, 33, 36);
+
+//gradient
+$gradient-night: linear-gradient(to bottom right, $color-night-light, $color-night-dark);
+
+$gradient-day: linear-gradient(to bottom right, $color-day-light, $color-day-dark);
+
+$gradient-neutral: linear-gradient(to bottom right, $color-neutral-light, $color-neutral-dark );
+
+//shadows
+$box-shadow-light: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+$box-shadow-medium: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+$box-shadow-heavy: 0 1rem 2rem rgba(0, 0, 0, 0.6);
