@@ -43,25 +43,29 @@
         color: white;
     }
 }
-  
+
 .project {
     background: $color-black-1;
     box-shadow: $box-shadow-light;
     border-radius: 1rem;
-    
+
     &.project-image {
         height: calc(94% - 6.8rem);
         width: 80%;
-        object-fit: cover;
+        object-fit: cover; //why is this not containing the image
+        max-height: 6em; //and why are these backups not either...
+        max-width: 5em;
     }
+
     &.project-title {
         font-size: 2rem;
         padding: 2rem 0.5rem;
     }
+
     &.code {
         color: white;
         transition: color 0.3s ease-out;
-        
+
         &:hover {
             color: $gradient-day;
         }

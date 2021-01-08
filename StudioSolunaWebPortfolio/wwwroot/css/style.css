@@ -140,7 +140,9 @@ section {
   .project.project-image {
     height: calc(94% - 6.8rem);
     width: 80%;
-    object-fit: cover; }
+    object-fit: cover;
+    max-height: 6em;
+    max-width: 5em; }
   .project.project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem; }

@@ -21,6 +21,7 @@ namespace StudioSolunaWebPortfolio
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+
                 });
     }
 }
