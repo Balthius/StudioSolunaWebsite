@@ -102,6 +102,18 @@ section {
   .intro-section h3 {
     color: #1e2124; }
 
+.navbar {
+  font-size: 2rem;
+  font-family: 'Century Gothic'; }
+  .navbar a {
+    padding-left: 5rem;
+    padding-right: 2rem;
+    border-radius: 2rem; }
+
+.navbar-brand {
+  font-size: 3rem;
+  font-family: 'Century Gothic'; }
+
 .projects-section {
   text-align: center;
   padding: 10rem 2rem; }
