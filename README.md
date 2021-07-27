@@ -9,4 +9,4 @@
 
 
 ## TODO: 
-* 7/10/2021: Add School HTML Project links to my 'projects' page
+* 7/10/2021: Add School HTML Project links to my 'projects' page || Complete 7/27/2021
