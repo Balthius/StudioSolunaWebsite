@@ -6,3 +6,7 @@
 
 
 ###### In the root of my project is a TemplateGeneration folder, which you can generate a basic folder layout from for your SASS/SCSS
+
+
+## TODO: 
+* 7/10/2021: Add School HTML Project links to my 'projects' page
