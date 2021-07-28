@@ -1,4 +1,4 @@
-/*
+﻿/*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
 900 - 1200px:   Tablet landscape
@@ -20,7 +20,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -35,12 +36,17 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 3rem;
   font-weight: 300; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+::-moz-selection {
+  background-color: #000;
+  color: #fff; }
 
 ::selection {
   background-color: #000;
@@ -50,7 +56,8 @@ section {
   margin: 3rem;
   padding: 3rem;
   border-radius: 3rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background: #b9daff; }
   section h1 {
     font-size: 8rem;
@@ -104,17 +111,21 @@ section {
 
 .project {
   background: #1e2124;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem; }
   .project.project-image {
     height: calc(94% - 6.8rem);
     width: 100%;
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .project.project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem; }
   .project.code {
     color: white;
+    -webkit-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
     transition: color 0.3s ease-out; }
     .project.code:hover {
       color: linear-gradient(to bottom right, #E0B400, #DA3E52); }
@@ -124,9 +135,13 @@ section {
   background-color: white;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 1fr;
-  column-gap: 5rem;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
   row-gap: 3rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center; }
 
 .grid-item {
@@ -137,3 +152,5 @@ section {
   border-radius: 5px; }
   .grid-item:hover {
     background-color: #e6e6e6; }
+
+/*# sourceMappingURL=wwwroot\css\style.comp.css.map */
