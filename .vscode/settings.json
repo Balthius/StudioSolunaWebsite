@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3f6732e0-65ac-48f1-b7a5-96e439e36704/resourceGroups/StudioSoluna/providers/Microsoft.Web/sites/StudioSolunaLandingPage",
+    "appService.deploySubpath": "StudioSolunaWebPortfolio"
+}
