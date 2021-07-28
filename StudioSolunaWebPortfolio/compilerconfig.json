@@ -3,5 +3,15 @@
     "outputFile": "wwwroot/css/style.css",
     "inputFile": "wwwroot/sass/main.scss",
     "sourceMap": false
-  }
+  },
+  {
+    "compilers": {
+    "sass": {
+    "indentType": "space",
+    "indentWidth": 2,
+    "outputStyle": "nested",
+    "Precision": 5
+    }
+    }
+    }
 ]
