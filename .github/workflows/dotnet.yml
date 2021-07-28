@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
 env: 
-  PUBLISH_PATH: '.'
+  PUBLISH_PATH: './StudioSolunaWebPortfolio'
   AZURE_WEB_APP: 'StudioSolunaLandingPage'
 
 jobs:
