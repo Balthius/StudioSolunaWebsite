@@ -5,13 +5,22 @@
     "sourceMap": false
   },
   {
-    "compilers": {
-    "sass": {
-    "indentType": "space",
-    "indentWidth": 2,
-    "outputStyle": "nested",
-    "Precision": 5
+    "compilers": 
+    {
+      "sass": 
+      {
+        "indentType": "space",
+        "indentWidth": 2,
+        "outputStyle": "nested",
+        "Precision": 5
+      },
+      "scss": 
+      {
+        "indentType": "space",
+        "indentWidth": 2,
+        "outputStyle": "nested",
+        "Precision": 5
+      }
     }
-    }
-    }
+  }
 ]
