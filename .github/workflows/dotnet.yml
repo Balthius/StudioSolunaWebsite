@@ -32,6 +32,7 @@ jobs:
       working-directory: ./StudioSolunaWebPortfolio
     - name: Publish
       run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/Publish'
+      working-directory: ./StudioSolunaWebPortfolio
       
     - name: Azure WebApp
       uses: Azure/webapps-deploy@v2
