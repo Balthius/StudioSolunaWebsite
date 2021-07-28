@@ -21,6 +21,10 @@ jobs:
       run: pwd
     - name: list some key files
       run: ls -lrt
-    - name: try a different die
-      run: ls -lrt websitemeta
-   
+    - name: Restore dependencies
+      run: dotnet restore
+      working-directory: ./StudioSolunaWebPortfolio
+    - name: Build
+      run: dotnet build --no-restore
+      working-directory: ./StudioSolunaWebPortfolio
+    
