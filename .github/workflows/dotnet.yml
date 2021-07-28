@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Check Directory
-      run: pwd
     - name: Restore dependencies
-      run: dotnet restore ./StudioSolunaWebPortfolio/StudioSolunaWebPortfolio.sln
+      run: dotnet restore
+      working-directory: ./StudioSolunaWebPortfolio
     - name: Build
-      run: dotnet build ./StudioSolunaWebPortfolio/StudioSolunaWebPortfolio.csproj --no-restore
+      run: dotnet build --no-restore
+      working-directory: ./StudioSolunaWebPortfolio
