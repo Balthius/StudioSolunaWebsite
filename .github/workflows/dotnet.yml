@@ -34,11 +34,17 @@ jobs:
       run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/publish'
       working-directory: ./StudioSolunaWebPortfolio
       
+    - name: Save public folder
+      uses: actions/upload-artifact@v2
+      with:
+        name: public
+        path: '${{env.PUBLISH_PATH}}'
     - uses: actions/checkout@v2
 
     - uses: actions/download-artifact@v2
-      with:
+      with: 
         name: '${{env.PUBLISH_PATH}}/publish'
+        needs: build
     
     - name: Display structure of downloaded files
       run: ls -R
