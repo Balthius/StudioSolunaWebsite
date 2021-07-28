@@ -24,6 +24,18 @@
       "lineFeed": "",
       "sourceMap": false
     },
+    "scss": {
+      "autoPrefix": "",
+      "includePath": "",
+      "indentType": "space",
+      "indentWidth": 2,
+      "outputStyle": "nested",
+      "Precision": 5,
+      "relativeUrls": true,
+      "sourceMapRoot": "",
+      "lineFeed": "",
+      "sourceMap": false
+    },
     "stylus": {
       "sourceMap": false
     },
