@@ -31,7 +31,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
       working-directory: ./StudioSolunaWebPortfolio
     - name: Publish
-      run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/Publish'
+      run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/publish'
       working-directory: ./StudioSolunaWebPortfolio
       
     - name: Azure WebApp
@@ -41,4 +41,11 @@ jobs:
         publish-profile: '${{secrets.SOLUNA_LANDING_PAGE_PUIBLISH_PROFILE}}'
         package: '${{env.PUBLISH_PATH}}/publish'
        
+    - uses: actions/checkout@v2
 
+    - uses: actions/download-artifact@v2
+      with:
+        name: '${{env.PUBLISH_PATH}}/publish'
+    
+    - name: Display structure of downloaded files
+      run: ls -R
