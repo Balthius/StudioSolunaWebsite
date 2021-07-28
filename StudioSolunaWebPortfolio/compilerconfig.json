@@ -1,7 +1,0 @@
-[
-  {
-    "outputFile": "wwwroot/css/style.css",
-    "inputFile": "wwwroot/sass/main.scss",
-    "sourceMap": false
-  }
-]
