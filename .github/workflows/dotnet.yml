@@ -48,5 +48,5 @@ jobs:
       with: 
         app-name: '${{env.AZURE_WEB_APP}}'
         publish-profile: '${{secrets.SOLUNA_LANDING_PAGE_PUIBLISH_PROFILE}}'
-        package: '$./StudioSolunaWebPortfolio/{{env.PUBLISH_PATH}}'
+        package: '{{env.PUBLISH_PATH}}'
        
