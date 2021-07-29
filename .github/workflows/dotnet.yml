@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 3.1
     - name: where are we
       run: pwd
     - name: list some key files
@@ -34,17 +34,15 @@ jobs:
       run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/publish'
       working-directory: ./StudioSolunaWebPortfolio
       
-    - name: Save public folder
-      uses: actions/upload-artifact@v2
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
       with:
-        name: public
+        # Artifact name
+        name: publish
+        # A file, directory or wildcard pattern that describes what to upload
         path: '${{env.PUBLISH_PATH}}'
-    - uses: actions/checkout@v2
+        # The desired behavior if no files are found using the provided path.
 
-    - uses: actions/download-artifact@v2
-      with: 
-        name: '${{env.PUBLISH_PATH}}/publish'
-        needs: build
     
     - name: Display structure of downloaded files
       run: ls -R
