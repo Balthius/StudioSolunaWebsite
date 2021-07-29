@@ -36,7 +36,7 @@ jobs:
       
 
     - name: Publish
-      run: dotnet publish --no-build --configuration Release -o '${{env.PUBLISH_PATH}}'
+      run: dotnet publish --no-build --configuration Release -o '$.{{env.PUBLISH_PATH}}'
       working-directory: ./StudioSolunaWebPortfolio
       
     
@@ -47,6 +47,6 @@ jobs:
       uses: Azure/webapps-deploy@v2
       with: 
         app-name: '${{env.AZURE_WEB_APP}}'
-        publish-profile: '${{secrets.SOLUNA_LANDING_PAGE_PUIBLISH_PROFILE}}'
+        publish-profile: '${{secrets.SOLUNA_LANDING_PAGE_PUBLISH_PROFILE}}'
         package: '{{env.PUBLISH_PATH}}'
        
