@@ -34,7 +34,6 @@ html {
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -43,11 +42,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
-
 ::-moz-selection {
   background-color: #000;
   color: #fff; }
-
 ::selection {
   background-color: #000;
   color: #fff; }
@@ -61,15 +58,45 @@ section {
   background: #b9daff; }
   section h1 {
     font-size: 8rem;
-    max-width: 640px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid white;
-    color: linear-gradient(to bottom right, #B084CC, #321F70); }
+    color: #321F70; }
     @media (max-width: 28.75em) {
       section h1 {
         font-size: 4rem; } }
+  section h2 {
+    font-size: 7rem;
+    color: #321F70; }
+    @media (max-width: 28.75em) {
+      section h2 {
+        font-size: 3.5rem; } }
+  section h3 {
+    font-size: 6rem;
+    color: #321F70; }
+    @media (max-width: 28.75em) {
+      section h3 {
+        font-size: 3rem; } }
+  section h4 {
+    font-size: 3.5rem;
+    color: #321F70; }
+    @media (max-width: 28.75em) {
+      section h4 {
+        font-size: 2rem; } }
+  section h5 {
+    font-size: 2rem;
+    color: #321F70; }
+    @media (max-width: 28.75em) {
+      section h5 {
+        font-size: 1rem; } }
+  section h6 {
+    font-size: 2rem;
+    color: #321F70; }
+    @media (max-width: 28.75em) {
+      section h6 {
+        font-size: .75rem; } }
   section p {
     text-align: center; }
+
+.page-header {
+  text-align: center; }
 
 .intro-section {
   background-color: white; }
@@ -78,6 +105,26 @@ section {
     font-weight: 700; }
   .intro-section h3 {
     color: #1e2124; }
+
+.navbar {
+  font-size: 2rem;
+  font-family: 'Century Gothic'; }
+  .navbar a {
+    padding-left: 5rem;
+    padding-right: 2rem;
+    border-radius: 2rem; }
+
+.navbar-brand {
+  font-size: 3rem;
+  font-family: 'Century Gothic'; }
+
+.navbar-fixed-top {
+  font-size: 2rem;
+  font-family: 'Century Gothic'; }
+  .navbar-fixed-top a {
+    padding-left: 5rem;
+    padding-right: 2rem;
+    border-radius: 2rem; }
 
 .projects-section {
   text-align: center;
@@ -91,10 +138,10 @@ section {
   @media (max-width: 28.75em) {
     .projects-section-header .projects-section-header {
       font-size: 4rem; } }
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 1fr;
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
@@ -116,9 +163,11 @@ section {
   border-radius: 1rem; }
   .project.project-image {
     height: calc(94% - 6.8rem);
-    width: 100%;
+    width: 80%;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    max-height: 6em;
+    max-width: 5em; }
   .project.project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem; }
@@ -133,17 +182,22 @@ section {
 .skills-section {
   display: grid;
   background-color: white;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 1fr;
-  -webkit-column-gap: 5rem;
-     -moz-column-gap: 5rem;
-          column-gap: 5rem;
-  row-gap: 3rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center; }
-
+  @media (max-width: 50em) {
+    .skills-section {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 28.75em) {
+    .skills-section {
+      grid-template-columns: repeat(3, 1fr); } }
 .grid-item {
   background-color: white;
   padding: 3px 6px;
@@ -157,14 +211,39 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
-  -webkit-column-gap: 5rem;
-     -moz-column-gap: 5rem;
-          column-gap: 5rem;
-  row-gap: 3rem; }
-
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  @media (max-width: 65em) {
+    .external-section {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 30em) {
+    .external-section {
+      grid-template-columns: 1fr;
+      grid-gap: 4rem;
+      width: 100%;
+      margin: auto; } }
+.external-card {
+  max-width: 32rem;
+  text-align: center; }
+  @media (max-width: 30em) {
+    .external-card {
+      margin: 10px 10px 10px 0; } }
 .main-section {
+  color: #321F70;
   text-align: left; }
   .main-section a {
     font-size: 3rem; }
+  .main-section h2 {
+    text-align: center; }
+  .main-section ul {
+    text-align: left;
+    font-size: 2rem;
+    list-style-type: none; }
+
+.welcome-section {
+  text-align: center;
+  color: #321F70; }
 
 /*# sourceMappingURL=wwwroot\sass\main.css.map */
