@@ -29,6 +29,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
       
+    - name: Restore Tools for WebCompiler
+      run: dotnet tool restore
+
+    
     - name: Compile sass
       run: dotnet webcompiler -r wwwroot
       
