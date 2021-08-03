@@ -4,10 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   
-  <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
-    <Exec Command="webcompiler -r wwwroot" StandardOutputImportance="high" />
-  </Target>
-  
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
