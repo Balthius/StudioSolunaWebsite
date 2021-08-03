@@ -26,7 +26,7 @@ jobs:
       run: ls -lrt
 
     - name: Compile sass
-      run: dotnet run tool webcompiler -r wwwroot
+      run: dotnet webcompiler -r wwwroot
       
     - name: Restore dependencies
       run: dotnet restore
