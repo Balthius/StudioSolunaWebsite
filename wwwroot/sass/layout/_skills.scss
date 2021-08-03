@@ -17,14 +17,24 @@
 }
 
 .grid-item {
-    background-color: white;
+    background: transparent;
     padding: 3px 6px;
-    border: 2px solid grey;
+    border: 2px solid $color-night-dark;
+    
+    text-align: center;
     font-size: 2rem;
     border-radius: 5px;
-
+    transition: all 0.3s ease;
     &:hover {
-        background-color: darken(white, 10%);
+        //background-color: darken(white, 10%);
+        background: $color-black-1;
+        h5{
+            color: $color-night-light-s;
+        }
+    }
+    &:active {
+        top: 2px;
     }
 
 }
+    //https://codepen.io/ahmedbeheiry/pen/aBdezY
