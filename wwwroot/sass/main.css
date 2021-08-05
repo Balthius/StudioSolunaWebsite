@@ -102,7 +102,8 @@ section {
 
 .navbar {
   font-size: 2rem;
-  font-family: 'Century Gothic'; }
+  font-family: 'Century Gothic';
+  position: fixed; }
   .navbar a {
     padding-left: 5rem;
     padding-right: 2rem;
@@ -247,5 +248,26 @@ section {
 .welcome-section {
   text-align: center;
   color: #321F70; }
+
+.profile-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  @media screen and (max-width: 500px) {
+    .profile-pictures .column {
+      width: 100%; } }
+  .profile-pictures .profile-picture {
+    display: block;
+    -webkit-box-flex: 33.33%;
+        -ms-flex: 33.33%;
+            flex: 33.33%;
+    padding: 5px;
+    min-height: 200px;
+    max-height: 350px;
+    min-width: 300px;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd; }
 
 /*# sourceMappingURL=wwwroot\sass\main.css.map */
