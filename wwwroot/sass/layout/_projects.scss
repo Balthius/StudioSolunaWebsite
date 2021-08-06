@@ -38,7 +38,7 @@
         }
     }
 
-    &a{
+    a{
         text-decoration: none;
         color: white;
     }
@@ -62,7 +62,7 @@
     &.project-title {
         font-size: 2rem;
         padding: 2rem 0.5rem;
-        &h5{
+        h5{
             color: $color-night-light;
         }
     }

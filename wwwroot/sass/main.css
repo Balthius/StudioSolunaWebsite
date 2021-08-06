@@ -144,7 +144,7 @@ header {
       padding: 6rem 1rem; }
     .projects-grid .projects-grid {
       grid-template-columns: 1fr; } }
-  .projects-grida {
+  .projects-grid a {
     text-decoration: none;
     color: white; }
 
@@ -165,7 +165,7 @@ header {
   .project.project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem; }
-    .project.project-titleh5 {
+    .project.project-title h5 {
       color: #B084CC; }
   .project.code {
     color: white;
@@ -255,20 +255,29 @@ header {
   display: -ms-flexbox;
   display: flex;
   text-align: center; }
-  @media screen and (max-width: 500px) {
-    .profile-pictures .column {
-      width: 100%; } }
   .profile-pictures .profile-picture {
     display: block;
     -webkit-box-flex: 33.33%;
         -ms-flex: 33.33%;
             flex: 33.33%;
     padding: 5px;
-    min-height: 200px;
+    min-height: 300px;
     max-height: 350px;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 150px;
+    max-width: 1700px;
     border-radius: 8px;
     border: 1px solid #ddd; }
+    @media (max-width: 65em) {
+      .profile-pictures .profile-picture {
+        min-height: 200px;
+        max-height: 250px;
+        min-width: 150px;
+        max-width: 200px; } }
+    @media (max-width: 30em) {
+      .profile-pictures .profile-picture {
+        min-height: 100px;
+        max-height: 150px;
+        min-width: 70px;
+        max-width: 125px; } }
 
 /*# sourceMappingURL=wwwroot\sass\main.css.map */

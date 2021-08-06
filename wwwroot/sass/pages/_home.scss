@@ -22,28 +22,38 @@
     color: $color-night-dark;
 }
 
-.profile-pictures{
+.profile-pictures {
     display: flex;
     
     text-align: center;
       
-      @media screen and (max-width: 500px) {
-        .column {
-          width: 100%;
-        }
-      }
     //   https://www.w3schools.com/css/css3_images.asp
-    .profile-picture{
+    .profile-picture {
         
         display: block;
         flex: 33.33%;
         padding: 5px;
-        min-height: 200px;
+        min-height: 300px;
         max-height: 350px;
-        min-width: 300px;
-        max-width: 350px;
+        min-width: 150px;
+        max-width: 1700px;
         
         border-radius: 8px;
         border: 1px solid #ddd;
+        
+        @media (max-width: 65em) {
+            min-height: 200px;
+            max-height: 250px;
+            min-width: 150px;
+            max-width: 200px;
+        }
+    
+        @media (max-width: 30em) {
+            min-height: 100px;
+            max-height: 150px;
+            min-width: 70px;
+            max-width: 125px;
+        }
+    
     }
 }
