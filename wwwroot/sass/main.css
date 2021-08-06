@@ -37,7 +37,6 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 3rem;
   font-weight: 300;
   font-family: 'Century Gothic', 'Open Sans', Helvetica, Arial, sans-serif; }
   @media only screen and (max-width: 56.25em) {
@@ -109,7 +108,6 @@ header {
 .navbar {
   font-size: 2rem;
   font-family: 'Century Gothic';
-  position: fixed;
   width: 100%; }
   .navbar a {
     padding-left: 5rem;
