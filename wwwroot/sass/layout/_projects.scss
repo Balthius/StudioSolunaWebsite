@@ -55,11 +55,14 @@
         object-fit: cover; //why is this not containing the image
         max-height: 6em; //and why are these backups not either...
         max-width: 5em;
+        min-height: 4em;
+        min-width: 4em;
     }
 
     &.project-title {
         font-size: 2rem;
         padding: 2rem 0.5rem;
+        color: $color-night-light;
     }
 
     &.code {
