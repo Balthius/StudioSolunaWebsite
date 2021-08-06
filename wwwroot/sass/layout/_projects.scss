@@ -38,14 +38,14 @@
         }
     }
 
-    &a {
+    &a{
         text-decoration: none;
         color: white;
     }
 }
 
 .project {
-    background: $color-black-1;
+    background: $color-grey-1;
     box-shadow: $box-shadow-light;
     border-radius: 1rem;
 
@@ -62,7 +62,9 @@
     &.project-title {
         font-size: 2rem;
         padding: 2rem 0.5rem;
-        color: $color-night-light;
+        &h5{
+            color: $color-night-light;
+        }
     }
 
     &.code {
