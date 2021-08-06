@@ -100,6 +100,12 @@ section {
   .intro-section h3 {
     color: #1e2124; }
 
+body {
+  margin: 0px; }
+
+header {
+  margin: 0px; }
+
 .navbar {
   font-size: 2rem;
   font-family: 'Century Gothic';
