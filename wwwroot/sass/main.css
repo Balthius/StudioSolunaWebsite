@@ -103,7 +103,8 @@ section {
 .navbar {
   font-size: 2rem;
   font-family: 'Century Gothic';
-  position: fixed; }
+  position: fixed;
+  width: 100%; }
   .navbar a {
     padding-left: 5rem;
     padding-right: 2rem;
@@ -112,14 +113,6 @@ section {
 .navbar-brand {
   font-size: 3rem;
   font-family: 'Century Gothic'; }
-
-.navbar-fixed-top {
-  font-size: 2rem;
-  font-family: 'Century Gothic'; }
-  .navbar-fixed-top a {
-    padding-left: 5rem;
-    padding-right: 2rem;
-    border-radius: 2rem; }
 
 .projects-section {
   text-align: center;
@@ -266,7 +259,7 @@ section {
     min-height: 200px;
     max-height: 350px;
     min-width: 300px;
-    max-width: 100%;
+    max-width: 350px;
     border-radius: 8px;
     border: 1px solid #ddd; }
 
