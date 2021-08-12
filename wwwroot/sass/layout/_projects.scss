@@ -49,15 +49,7 @@
     box-shadow: $box-shadow-light;
     border-radius: 1rem;
 
-    &.project-image {
-        height: calc(94% - 6.8rem);
-        width: 80%;
-        object-fit: cover; //why is this not containing the image
-        max-height: 6em; //and why are these backups not either...
-        max-width: 5em;
-        min-height: 4em;
-        min-width: 4em;
-    }
+    
 
     &.project-title {
         font-size: 2rem;
@@ -78,4 +70,12 @@
 }
  
 
-  
+.project-image {
+    height: calc(94% - 6.8rem);
+    width: 80%;
+    object-fit: cover; //why is this not containing the image
+    max-height: 25em; //and why are these backups not either...
+    max-width: 20em;
+    min-height: 4em;
+    min-width: 4em;
+}
