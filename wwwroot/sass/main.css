@@ -60,31 +60,31 @@ section {
     color: #321F70; }
     @media (max-width: 28.75em) {
       section h2 {
-        font-size: 3.5rem; } }
+        font-size: 5.5rem; } }
   section h3 {
     font-size: 6rem;
     color: #321F70; }
     @media (max-width: 28.75em) {
       section h3 {
-        font-size: 3rem; } }
+        font-size: 4.5rem; } }
   section h4 {
     font-size: 3.5rem;
     color: #321F70; }
     @media (max-width: 28.75em) {
       section h4 {
-        font-size: 2rem; } }
+        font-size: 3rem; } }
   section h5 {
     font-size: 2rem;
     color: #321F70; }
     @media (max-width: 28.75em) {
       section h5 {
-        font-size: 1rem; } }
+        font-size: 1.75rem; } }
   section h6 {
-    font-size: .8rem;
+    font-size: 1.5rem;
     color: #321F70; }
     @media (max-width: 28.75em) {
       section h6 {
-        font-size: .6rem; } }
+        font-size: 1rem; } }
   section p {
     text-align: center; }
 
