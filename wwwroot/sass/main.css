@@ -189,10 +189,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center; }
-  @media (max-width: 50em) {
+  @media (max-width: 40em) {
     .skills-section {
       grid-template-columns: repeat(4, 1fr); } }
-  @media (max-width: 28.75em) {
+  @media (max-width: 25em) {
     .skills-section {
       grid-template-columns: repeat(3, 1fr); } }
 .grid-item {

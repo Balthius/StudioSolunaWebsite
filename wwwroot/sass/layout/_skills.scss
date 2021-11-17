@@ -7,11 +7,11 @@
     row-gap: 2rem;
     align-items: center;
     justify-items: center; //this created the issue
-    @media (max-width: 50em) {
+    @media (max-width: 40em) {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    @media (max-width: 28.75em) {
+    @media (max-width: 25em) {
         grid-template-columns: repeat(3, 1fr);
     }
 }
